@@ -7,7 +7,136 @@
     {
       "id": "about",
       "type": "Page",
-      "heading": "Er det omsetning?",
+      "heading": "Byggevare",
+      "children": [
+        {
+          "id": "isProductByggevare",
+          "property": "isProductByggevare",
+          "type": "Radio",
+          "heading": "Er produktet en byggevare?",
+          "text": "<p>Byggevarer omfatter de aller fleste varer som skal bygges inn i bygninger og anlegg. Det kan være alt fra trevirke, betong, stål og isolasjonsprodukter til bjelker, dører, vinduer og VVS-produkter. Byggesett, som byggmoduler og prefabrikkerte våtrom, er også byggevarer. </p>",
+          "options": [
+            {
+              "id": "isProductByggevare.ja",
+              "type": "Answer",
+              "heading": "Ja",
+              "value": "ja"
+            },
+            {
+              "id": "isProductByggevare.nei",
+              "type": "Answer",
+              "heading": "Nei",
+              "value": "nei"
+            },
+            {
+              "id": "isProductByggevare.usikker",
+              "type": "Answer",
+              "heading": "Usikker",
+              "value": "usikker"
+            }
+          ]
+        },
+        {
+          "id": "ResultNoRules",
+          "type": "Result",
+          "show": { "field": "isProductByggevare", "operator": "eq", "value": "nei" },
+          "heading": "Byggevaren er ikke omfattet av kravene til omsetning",
+          "lead": "<p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid også sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": { "field": "isProductByggevare", "operator": "eq", "value": "usikker" },
+              "children": [
+                {
+                  "id": "varigDelAvByggverk",
+                  "property": "varigDelAvByggverk",
+                  "type": "Radio",
+                  "heading": "Skal produktet bygges varig inn i et byggverk?",
+                  "text": "<p>De aller fleste produkter som skal bygges inn i et byggverk er byggevarer.</p>",
+                  "options": [
+                    {
+                      "id": "varigDelAvByggverk.ja",
+                      "type": "Answer",
+                      "heading": "Ja, det er en byggevare",
+                      "text": "De fleste som ting som bygges permanent inn i boligen er byggevarer. Noen byggevarer som kan skiftes ut, for eksempel vinduer og dører, regnes også som byggevarer.",
+                      "value": true
+                    },
+                    {
+                      "id": "varigDelAvByggverk.nei",
+                      "type": "Answer",
+                      "heading": "Nei, det er ikke en byggevare",
+                      "text": "Det som ikke bygges permanent inn, som listverk og kjøkkeninnredning, anses ikke som byggevarer.",
+                      "value": false
+                    }
+                  ]
+                },
+                {
+                  "id": "grunnleggendeEgenskaper",
+                  "property": "grunnleggendeEgenskaper",
+                  "type": "Radio",
+                  "heading": "Påvirker produktet byggkvaliteten?",
+                  "show": { "field": "varigDelAvByggverk", "operator": "required" },
+                  "text": "<p>Hvis produktet har en vesentlig funksjon i byggverket, er det en byggevare. Produktet er mest sannsynlig en byggevare hvis det påvirker byggets:</p><ul><li>mekaniske motstandsevne og stabilitet</li><li>brannsikkerhet</li><li>hygiene, helse og miljø</li><li>sikkerhet og tilgjengelighet ved bruk</li><li>vern mot støy</li><li>energiøkonomisering og varmeisolering </li><li>bærekraftighet</li></ul><p>Maling som ikke har brannegenskaper er for eksempel ikke regnet som en byggevare ettersom det ikke påvirker kvaliteten på byggverket.</p>",
+                  "options": [
+                    {
+                      "id": "grunnleggendeEgenskaper.ja",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": true
+                    },
+                    {
+                      "id": "grunnleggendeEgenskaper.nei",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": false
+                    }
+                  ]
+                },
+                {
+                  "id": "ResultNoRules",
+                  "type": "Result",
+                  "show": { "field": "grunnleggendeEgenskaper", "operator": "eq", "value": false },
+                  "heading": "Byggevaren er ikke omfattet av kravene til omsetning",
+                  "lead": "<p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid også sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Branch",
+          "branches": [
+            {
+              "test": {
+                "type": "or",
+                "clauses": [
+                  {
+                    "type": "or",
+                    "clauses": [
+                      { "field": "varigDelAvByggverk", "operator": "eq", "value": false },
+                      { "field": "grunnleggendeEgenskaper", "operator": "eq", "value": false }
+                    ]
+                  },
+                  { "field": "isProductByggevare", "operator": "eq", "value": "nei" }
+                ]
+              },
+              "children": [
+                {
+                  "type": "Reference",
+                  "nodeId": "resultIkkeByggevare"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Sale",
+      "type": "Page",
+      "heading": "Omsetning",
       "children": [
         {
           "id": "onlySale",
@@ -40,9 +169,52 @@
       ]
     },
     {
+      "id": "import",
+      "type": "Page",
+      "heading": "Import av byggevarer",
+      "children": [
+        {
+          "id": "importProduct",
+          "property": "importProduct",
+          "type": "Radio",
+          "heading": "Skal byggevaren importeres til Norge?",
+          "text": "<p>Mer her </p>",
+          "summary": "Informasjon om forvaltning, drift og vedlikehold",
+          "details": "<p>Mange produsenter gir også utfyllende informasjon til byggverkets eier for å sørge for best mulig vedlikehold i driftsfasen av byggevarene. Slik forenklet forvaltning, drift og vedlikeholdsinformasjon (FDV), kan omfatte råd om rengjøring og rengjøringsmetoder, fuktbestandighet, vedlikeholdsinstruks- og intervall, vilkår for garanti osv.</p>",
+          "options": [
+            {
+              "id": "importProduct.no",
+              "type": "Answer",
+              "heading": "Nei",
+              "value": "no"
+            },
+            {
+              "id": "importProduct.yesEU",
+              "type": "Answer",
+              "heading": "Ja, fra et land i EU/EØS-området",
+              "value": "yesEU"
+            },
+            {
+              "id": "importProduct.yesOther",
+              "type": "Answer",
+              "heading": "Ja, fra et land utenfor EU/EØS-området",
+              "value": "yesOther"
+            }
+          ]
+        },
+        {
+          "id": "ResultImport",
+          "type": "Result",
+          "show": { "field": "importProduct", "operator": "eq", "value": "yesOther" },
+          "heading": "Du regnes som importør av byggevaren",
+          "lead": "<p> Mer her</p>"
+        }
+      ]
+    },
+    {
       "id": "Recycling",
       "type": "Page",
-      "heading": "Skal produktet bearbeides?",
+      "heading": "Resirkulering eller ombruk",
       "children": [
         {
           "id": "Recycling",
@@ -75,28 +247,34 @@
       ]
     },
     {
-      "id": "OldDocument",
+      "id": "placingMarket",
       "type": "Page",
-      "heading": "Vurdere tidligere krav til dokumentasjon",
+      "heading": "Første omsetning av byggevaren",
       "children": [
         {
-          "id": "OldDocumentReq",
-          "property": "OldDocumentReq",
+          "id": "placingMarketTime",
+          "property": "placingMarketTime",
           "type": "Radio",
-          "heading": "Var det krav til dokumentasjon da byggevaren først ble omsatt?",
-          "text": "<p>Det er opp til den som ønsker å omsette varen videre å vurdere om det var krav til produktet da det først ble omsatt på markedet. Under er en tabell som skal hjelpe til med denne vurderingen.</p> <p> <img src= https://dibk.no/contentassets/772e2f3bfe7349f39215bcf1ac69d808/ombruk-tabell-regelverk-.jpg /></p>",
+          "heading": "Når ble byggevaren plassert på markedet for første gang?",
+          "text": "<p>Mer her </p>",
           "options": [
             {
-              "id": "OldDocumentReq.yes",
+              "id": "placingMarketTime.2014",
               "type": "Answer",
-              "heading": "Ja",
-              "value": true
+              "heading": "Etter 1. januar 2014",
+              "value": 2014
             },
             {
-              "id": "OldDocumentReq.no",
+              "id": "placingMarketTime.2010",
               "type": "Answer",
-              "heading": "Nei",
-              "value": false
+              "heading": "Mellom 1. juli 2010 og 1. januar 2014",
+              "value": 2010
+            },
+            {
+              "id": "placingMarketTime.1950",
+              "type": "Answer",
+              "heading": "Før 1. juli 2010",
+              "value": 1950
             }
           ]
         }
@@ -112,7 +290,7 @@
           "type": "Branch",
           "branches": [
             {
-              "test": { "field": "OldDocumentReq", "operator": "eq", "value": true },
+              "test": { "field": "placingMarketTime", "operator": "gte", "value": "2010" },
               "children": [
                 {
                   "id": "TodayDocument",
@@ -212,8 +390,40 @@
           "type": "Branch",
           "branches": [
             {
-              "test": { "field": "OldDocumentReq", "operator": "eq", "value": false },
+              "test": { "field": "placingMarketTime", "operator": "eq", "value": 1950 },
               "children": [
+                {
+                  "id": "Charcteristics",
+                  "property": "Charcteristics",
+                  "type": "Radio",
+                  "heading": "Er en eller flere av egenskapene til produktet endret?",
+                  "text":"<p> tekst </p>",
+                  "image": {
+                    "url": "/images/endring-i-egenskaper.png",
+                    "alt": "endring egenskaper"
+                  },
+                  "options": [
+                    {
+                      "id": "Charcteristics.yes",
+                      "type": "Answer",
+                      "heading": "Ja",
+                      "value": true
+                    },
+                    {
+                      "id": "Charcteristics.no",
+                      "type": "Answer",
+                      "heading": "Nei",
+                      "value": false
+                    }
+                  ]
+                },
+                {
+                  "id": "ResultProducer",
+                  "type": "Result",
+                  "heading": "Du er produsent",
+                  "lead": "Mer her",
+                  "show": { "field": "Charcteristics", "operator": "eq", "value": true }
+                },
                 {
                   "id": "Declare",
                   "property": "Declare",
