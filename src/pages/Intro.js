@@ -24,7 +24,7 @@ function Intro({ close, data: { $computed, ...data } }) {
           <li>Har du dokumentasjon av byggevaren fra når den først ble omsatt? For eksempel produktdokumentasjon, sertifisering eller godkjenning. FDV-dokumentasjonen kan også si noe om produktets opprinnelse</li>
         </ul>
         <h3>Skillet mellom omsetning og bruk av byggevaren</h3> 
-        Når vi snakker om kravene til byggevarer skiller vi mellom kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. 
+        Når vi snakker om kravene til byggevarer skiller vi mellom kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. I denne veiviseren er fokuset på kravene til omsetning/salg av brukte byggevarer.  
         <p><img src="https://dibk.no/globalassets/5.-nye-sider-om-byggevarer/byggevarer---hovedside/bildeom.jpg"/></p>
         
 
