@@ -4,7 +4,7 @@ import { Wizard, StyleProvider, trackEvent, track } from 'losen';
 
 import Intro from './pages/Intro';
 import store from './store';
-import wizard from './api/wizard.json';
+import wizard from './api/ombruk.json';
 
 export default class App extends Component {
   static trackIntro() {
