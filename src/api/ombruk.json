@@ -238,11 +238,11 @@
           ]
         },
         {
-          "id": "ResultProducer",
+          "id": "ResultProducerRecycle",
           "type": "Result",
           "show": { "field": "Recycling", "operator": "eq", "value": false },
           "heading": "Du må skaffe ny dokumentasjon på produktet",
-          "lead": "<h3> Hvordan kan du dokumentere egenskapene til en ombrukt byggevare?</h3> <p> Kravene til dokumentasjon av ikke CE-merkede byggevarer står i <a href='https://dibk.no/regelverk/dok/iii/innledning/' target='_blank'>byggevareforskriften kap. 3</a>. Det er et krav om at vesentlige egenskaper skal dokumenteres i henhold til en tilfredsstillende teknisk spesifikasjon. </p><p> En slik spesifikasjon være en nasjonal standard (både norske standarder eller standarder fra andre EØS-land), en teknisk godkjenning fra et tredjepartsorgan, eller produsentens egne tekniske spesifikasjoner. Det er altså nokså åpent hva som kan være en slik teknisk spesifikasjon. For ombrukte produkter kan altså en slik teknisk spesifikasjon være noe som lages i det konkrete prosjektet eller en nasjonal standard som er utviklet av Standard Norge. </p> <p> Du trenger ikke følge kravene i den harmoniserte standarden til produktet, men standarden kan gi deg en oversikt over hvilke egenskaper som ofte er relevante for ditt produkt. </p> <p> I dag finnes det få testmetoder for å vurdere og kontrollere ombrukte produkter. Under er en liste over noen slike metoder som er laget: <ul> <li> Teglstein: <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> Stål: <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul> </p> <h3> Hvor mange egenskaper må du dokumentere? </h3> <p> Hvis det ombrukte produktet skal brukes til et konkret prosjekt, trenger du kun dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvis det ombrukte produktet skal omsettes åpent på markedet de egenskapene som er relevante for slike produkter, må du dokumentere minst en egenskap. </p> <h3> Kravene i byggesaken </h3> <p> Før byggevarer bygges inn i byggverk skal det dokumenteres at produktene har de egenskapene som er nødvendige for at det ferdige byggverket skal tilfredsstille kravene i byggteknisk forskrift, jf. <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'> TEK17 § 3-1.</a> </p> <p> Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket tilfredsstiller alle kravene kravene i byggteknisk forskrift. </p>"
+          "lead": "<p> Kravene til dokumentasjon av byggevarer står i <a href='https://dibk.no/regelverk/dok/' target='_blank'>byggevareforskriften</a>. Mange bruker resirkulerte byggevarer som råstoff til å produsere nye byggevarer. I slike tilfeller stiller byggevareforskriften det kun krav til det endelige sluttproduktet. Det er ofte nødvendig med normal kvalitetssikring av materialgjenvunnet råstoff inn i produksjonen av de nye produktene. </p> <p> I enkelte tilfeller omarbeides produktet og brukes som et annet produkt, f.eks. knust betong.  Det finnes standarder for hvordan slike produkter skal bearbeides. </p> <p> For å øke muligheten for å materialgjenvinne en stadig større andel av de ulike avfallsfraksjonene, er det viktig at demontering og rivning foregår på en slik måte at separering og sortering av materialer blir mindre ressurskrevende. Det er derfor viktig å prosjektere og planlegge for materialgjenvinning ved demontering/rivning. </p>"
         }
       ]
     },
@@ -331,7 +331,7 @@
                   "property": "Charcteristics",
                   "type": "Radio",
                   "heading": "Er en eller flere av de vesentlige egenskapene til produktet endret?",
-                  "text": "<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
+                  "text": "<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
                   "image": {
                     "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/endring_i_egenskaper.png",
                     "alt": "endring egenskaper"
@@ -409,7 +409,7 @@
                   "property": "Charcteristics",
                   "type": "Radio",
                   "heading": "Er en eller flere av de vesentlige egenskapene til produktet endret?",
-                  "text":"<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
+                  "text":"<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
                   "image": {
                     "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/endring_i_egenskaper.png",
                     "alt": "endring egenskaper"
