@@ -41,7 +41,7 @@
           "type": "Result",
           "show": { "field": "isProductByggevare", "operator": "eq", "value": "nei" },
           "heading": "Produktet er ikke omfattet av kravene",
-          "lead": "<p> Produkter som ikke er byggevarer, tenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. </p>"
+          "lead": "<p> Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. </p>"
         },
         {
           "type": "Branch",
@@ -99,7 +99,7 @@
                   "type": "Result",
                   "show": { "field": "grunnleggendeEgenskaper", "operator": "eq", "value": false },
                   "heading": "Byggevaren er ikke omfattet av kravene til omsetning",
-                  "lead": "<p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid også sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
+                  "lead": "<p>Byggevarer som ikke omsettes, må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid også sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
                 }
               ]
             }
@@ -164,7 +164,7 @@
           "type": "Result",
           "show": { "field": "onlySale", "operator": "eq", "value": false },
           "heading": "Byggevaren er ikke omfattet av kravene til omsetning",
-          "lead": "<p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid også sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
+          "lead": "<p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. Du må imidlertid sjekke om byggevarers ytelser er tilstrekkelige for at bygningen skal oppfylle de tekniske krav i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>Byggteknisk forskrift</a>. </p> <p>Det er tiltakshaver og de ansvarlige foretak i byggesaken som har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller de materielle kravene i forskriften.</p>"
         }
       ]
     },
@@ -299,8 +299,8 @@
                   "heading": "Finnes det dokumentasjon på produktet i dag og kan du fremskaffe denne dokumentasjonen?",
                   "text": "<p> Hvis det finnes dokumentasjon fra da produktet først ble omsatt, så kan dette gi viktig informasjon om produktet. Denne dokumentasjonen kan muligens ligge hos produsenten eller kontrollorganet/sertifiseringsorganet som lagde dokumentasjonen. Det kan også ligge i FDV-dokumentasjonen til bygget. </p><p> Under er en oversikt over hvilken dokumentasjon produktene skal ha avhengig av når de er produsert: </p>",
                   "image": {
-                    "url": "/images/endring-i-egenskaper.png",
-                    "alt": "endring egenskaper"
+                    "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/krav_til_dokumentasjon.png",
+                    "alt": "krav til dokumentasjon"
                   },
                   "summary": "Unntak fra krav om dokumentasjon",
                   "details": "<p> Det finnes visse typer unntak fra kravene til CE-merking/ytelseserklæring eller samsvarserklæring: <ul> <li> Byggevarer som er individuelt produsert, eller er produsert etter mål i en prosess som ikke innebærer serieproduksjon - for en bestemt ordre - og installeres av produsenten som er ansvarlig for innbygging.</li> <li>Byggevarer som er produsert på byggeplassen av ansvarlige foretak i en byggesak. </li> <li> Byggevarer som er produsert etter tradisjonelle metoder, eller med metoder som egner seg for bevaring av kulturarven og i en ikke-industriell prosess, for rehabilitering av byggverk som er offisielt vernet eller bevaringsverdige på grunn av særskilt arkitektonisk eller historisk verdi. </li></ul> <p> De aller fleste byggevarer som har blitt satt på markedet etter 2010 er imidlertid serieproduserte byggevarer på fabrikk. Disse unntakene gjelder derfor i utgangspunktet for ytterst få byggevarer. </p> </p>",
@@ -407,7 +407,7 @@
                   "heading": "Er en eller flere av de vesentlige egenskapene til produktet endret?",
                   "text":"<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
                   "image": {
-                    "url": "/images/endring-i-egenskaper.png",
+                    "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/endring_i_egenskaper.png",
                     "alt": "endring egenskaper"
                   },
                   "options": [
