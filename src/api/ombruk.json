@@ -40,8 +40,8 @@
           "id": "ResultNoRules",
           "type": "Result",
           "show": { "field": "isProductByggevare", "operator": "eq", "value": "nei" },
-          "heading": "Produktet er ikke omfattet av kravene",
-          "lead": "<p> Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. </p>"
+          "heading": "Produktet er ikke omfattet av kravene i bygningsregelverket",
+          "lead": "<p> Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. Enkelte ombruksprosjekter bruker f.eks. teglstein, vinguer, glass eller planker til interiørformål. Produkter av en kunsterisk eller intermessig karakter er ikke dekket av kravene i bygningsregelverket.</p>"
         },
         {
           "type": "Branch",
@@ -143,7 +143,7 @@
           "property": "onlySale",
           "type": "Radio",
           "heading": "Skal du omsette produktet?",
-          "text": "<p>Regelverket begrenser ikke ombruk av materialer der de benyttes til å gjenoppbygge samme eksisterende bygg eller til bygg som har samme eier. Hvis man derimot skal benytte ombruksmaterialer fra andre bygg med til dels ukjent opphav, setter byggevareforskriften noen viktige begrensninger. Omsetning omfatter både salg og når man gir bort produktet. </p>",
+          "text": "<p>Omsetning omfatter både salg og når man gir bort produktet. Det regnes ikke som omsetning hvis byggevaren tas ut av et riving- og rehabiliteringsprosjekt og <ul> <li> brukes på nytt i samme prosjekt eller samme eksisterende bygg (lokalt ombruk) eller </li> <li> samme byggherre eller aktør bruker de på nytt i et annet prosjekt (internt ombruk) </li> </ul> </p> <p> Det er gjennomført mange rehabiliteringsprosjekter der bygg er ribbet for det meste av vegger og inventar, men der man har beholdt grunn og fundamenter, dekker, bæresystemer og eventuelt bærende yttervegger. Disse bygningselementene står for det største bidraget til klimagassutslipp fra bygg. Ombruk av disse bygningselementene er derfor viktig for å redusere klimagassutslipp og sikre bedre ressursutnyttelse. Slik ombruk regnes ikke som omsetning. Hvis materialene ikke skifter eier, er det heller ikke å regne som omsetning. </p> <p> Hvis man derimot skal benytte ombruksmaterialer fra andre aktører med til dels ukjent opphav, setter byggevareforskriften noen viktige begrensninger. </p>",
           "options": [
             {
               "id": "onlySale.yes",
@@ -221,7 +221,7 @@
           "property": "Recycling",
           "type": "Radio",
           "heading": "Skal produktet bearbeides?",
-          "text": "<p>Det er viktig å skille mellom å resirkulere eller gjenvinne gamle produkter og å bruke et gammelt produkt uten at man gjør endringer med det. Gjenvinning er å lage nye produkter av brukte byggevarer. Å ombruke byggevarer vil si å bruke gamle materialer på nytt uten endringer.</p>",
+          "text": "<p> Det er viktig å skille mellom å resirkulere/gjenvinne gamle produkter og å bruke et gammelt produkt på nytt uten at man gjør store endringer med produktet. <ul> <li> Resirkulering/gjenvinning er å bruke materiale fra avfall som råstoff til å produsere nye varer. På denne måten lager man nye produkter av brukte byggevarer – enten til det samme produktet eller et nytt produkt. For eksempel vil det være resirkulering/gjenvinning å kverne opp gipsplater som brukes i nye gipsplater eller kverne opp glass som brukes til å produsere isolasjonsmateriale. </li> <li> Å ombruke byggevarer vil si å bruke gamle materialer på nytt uten å gjøre endringer. Det regnes som ombruk selv om produktet vaskes eller renses. Det regnes også som ombruk selv om deler av produktet kappes vekk eller fjernes, så lenge dette ikke innebærer grunnleggende endringer av produktet. Den nye anvendelsen kan være den samme som første gang eller at produktet brukes som noe annet, f.eks. vinduer som blir benyttet som innervegger. </li> </ul> </p>",
           "options": [
             {
               "id": "Recycling.yes",
@@ -331,7 +331,7 @@
                   "property": "Charcteristics",
                   "type": "Radio",
                   "heading": "Er en eller flere av de vesentlige egenskapene til produktet endret?",
-                  "text": "<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
+                  "text": "<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p> <p> Spørsmål man kan stille seg i denne forbindelse er: <ul> <li> Er den funksjonelle kvaliteten forringet av festemidler, hull, fukt eller annen ødeleggelse? </li> <li> Er den strukturelle kvaliteten forringet av overbelastning eller annen ødeleggelse? </li> <li> Er det et produkt som vanligvis har lang levetid, hvor egenskapene i mindre grad påvirkes av ytre forhold? </li> </ul> </p> <p>  Hvilke egenskaper som er vesentlige vil variere veldig fra produkt til produkt og vil i stor grad avhenge av hva produktet skal brukes til.</p>",
                   "image": {
                     "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/endring_i_egenskaper.png",
                     "alt": "endring egenskaper"
@@ -409,7 +409,7 @@
                   "property": "Charcteristics",
                   "type": "Radio",
                   "heading": "Er en eller flere av de vesentlige egenskapene til produktet endret?",
-                  "text":"<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p>",
+                  "text": "<p> Det er vanlig at byggevarer som står i byggverk endrer egenskaper over tid. Byggevarer kan gjennom montasje, bruk eller demontering miste eller endre de nødvendige egenskapene de opprinnelig hadde. I denne forbindelse kan det være avgjørende å vite noe om hvilke påkjenninger produktet har blitt utsatt for. </p> <p> Spørsmål man kan stille seg i denne forbindelse er: <ul> <li> Er den funksjonelle kvaliteten forringet av festemidler, hull, fukt eller annen ødeleggelse? </li> <li> Er den strukturelle kvaliteten forringet av overbelastning eller annen ødeleggelse? </li> <li> Er det et produkt som vanligvis har lang levetid, hvor egenskapene i mindre grad påvirkes av ytre forhold? </li> </ul> </p> <p>  Hvilke egenskaper som er vesentlige vil variere veldig fra produkt til produkt og vil i stor grad avhenge av hva produktet skal brukes til.</p>",
                   "image": {
                     "url": "https://dibk-web-preprod.azurewebsites.net/globalassets/test/endring_i_egenskaper.png",
                     "alt": "endring egenskaper"
