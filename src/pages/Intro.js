@@ -13,18 +13,19 @@ function Intro({ close, data: { $computed, ...data } }) {
       <IntroMain>
         <Primitives.Heading.H1>Skal du selge gamle byggevarer på nytt?</Primitives.Heading.H1>
         <Primitives.Paragraphs.Lead>
-        Denne veiviseren hjelper deg med å finne kravene for å kunne omsette en gammel byggevare som skal brukes på nytt. Svar på spørsmålene for å finne ut om dokumentasjonen er i orden, eller om det er noe som mangler. 
+        Finn kravene som gjelder for å omsette en gammel byggevare på nytt. Svar på spørsmålene for å finne ut om dokumentasjonen er i orden, eller om det er noe som mangler. 
         </Primitives.Paragraphs.Lead>
         <Primitives.Paragraphs.Lead>
         <h3>Før du begynner</h3> 
-        Før du begynner denne veiviseren, bør du tenke igjennom: 
+        Før du begynner er det nyttig at du vet: 
         <ul>
-          <li>Hvor gammel er byggevaren? Hvis du vet noe om hvor gammelt byggverket er, så kan det også være en indikator på hvor gammelt produktet er.</li>
-          <li>Har du opplysninger om behandlingen av byggevaren fra rivingsprosessen?</li>
-          <li>Har du dokumentasjon av byggevaren fra når den først ble omsatt? For eksempel produktdokumentasjon, sertifisering eller godkjenning. FDV-dokumentasjonen kan også si noe om produktets opprinnelse</li>
+          <li>hvor gammel byggevaren er</li>
+          <li>om byggevaren har stått i et norsk byggverk eller kommer fra utlandet</li>
+          <li>om du har produktdokumentasjon, sertifisering eller godkjenning eller annen dokumentasjon fra da byggevaren først ble omsatt (FDV-dokumentasjon kan si noe om opprinnelsen til produktet)</li>
+          <li>andre opplysninger om behandlingen av byggevaren fra rivingsprosessen</li>
         </ul>
         <h3>Skillet mellom omsetning og bruk av byggevaren</h3> 
-        Når vi snakker om kravene til byggevarer, skiller vi mellom kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk.  
+        Det er forskjell på kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. 
         <p><img src="https://dibk.no/globalassets/5.-nye-sider-om-byggevarer/byggevarer---hovedside/bildeom.jpg"/></p>
         <p>I denne veiviseren er fokuset på kravene til omsetning/salg av brukte byggevarer.</p>
         

@@ -14,7 +14,7 @@
           "property": "isProductByggevare",
           "type": "Radio",
           "heading": "Er produktet en byggevare?",
-          "text": "<p>Byggevarer omfatter de aller fleste varer som skal bygges inn i bygninger og anlegg. Det kan være alt fra trevirke, betong, stål og isolasjonsprodukter til bjelker, dører, vinduer og VVS-produkter. Byggesett, som byggmoduler og prefabrikkerte våtrom, er også byggevarer. </p>",
+          "text": "<p>Byggevarer omfatter de aller fleste varer som skal bygges inn i bygninger og anlegg. Det kan være alt fra trevirke, betong, stål og isolasjonsprodukter til bjelker, dører, vinduer og VVS-produkter. Byggesett, som byggmoduler og prefabrikkerte våtrom, er også byggevarer. Produkter som brukes til kunst eller interiør er ikke byggevarer.</p>",
           "options": [
             {
               "id": "isProductByggevare.ja",
@@ -99,7 +99,7 @@
                   "type": "Result",
                   "show": { "field": "grunnleggendeEgenskaper", "operator": "eq", "value": false },
                   "heading": "Produktet er ikke omfattet av kravene i bygningsregelverket",
-                  "lead": "<p> Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. Enkelte ombruksprosjekter bruker f.eks. teglstein, vinguer, glass eller planker til interiørformål. Produkter av en kunsterisk eller intermessig karakter er ikke dekket av kravene i bygningsregelverket.</p>"
+                  "lead": "<p>Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. Produkter som brukes til kunst eller interiør er ikke dekket av kravene i bygningsregelverket.</p>"
                 }
               ]
             }
@@ -143,7 +143,7 @@
           "property": "onlySale",
           "type": "Radio",
           "heading": "Skal du omsette produktet?",
-          "text": "<p>Omsetning omfatter både salg og når man gir bort produktet. Hvis byggevaren ikke skifter eier, er det heller ikke å regne som omsetning. </p> <p> Det regnes ikke som omsetning hvis byggevaren tas ut av et riving- og rehabiliteringsprosjekt og <ul> <li> brukes på nytt i samme prosjekt eller samme eksisterende bygg (lokalt ombruk) eller </li> <li> samme byggherre eller aktør bruker de på nytt i et annet prosjekt (internt ombruk) </li> </ul> </p> <p> Det er gjennomført mange rehabiliteringsprosjekter der man har beholdt grunn og fundamenter, dekker, bæresystemer og eventuelt bærende yttervegger. Ombruk av slike bærekonstruksjoner regnes ikke som omsetning.</p> <p>Kravene til omsetning er rettet mot produsenter, importører og distributører av byggevarer. Den som kjøper et produkt for å bruke det i et prosjekt er ikke omfattet av kravene til omsetning.</p> <p> Hvis man derimot skal omsette ombruksmaterialer, så setter byggevareforskriften noen viktige begrensninger. </p>",
+          "text": "<p>Omsetning innebærer at produkter blir solgt eller gitt bort. Hvis byggevaren ikke skifter eier, er det ikke omsetning. Kravene til omsetning er rettet mot produsenter, importører og distributører av byggevarer. Den som kjøper et produkt for å bruke det i et prosjekt er ikke omfattet av kravene til omsetning.</p> <p> Det regnes ikke som omsetning hvis byggevaren tas ut av et riving- og rehabiliteringsprosjekt og <ul> <li> brukes på nytt i samme prosjekt eller samme eksisterende bygg (lokalt ombruk) eller </li> <li> samme byggherre eller aktør bruker de på nytt i et annet prosjekt (internt ombruk) </li> </ul> </p> <p> Det er gjennomført mange rehabiliteringsprosjekter der man har beholdt grunn og fundamenter, dekker, bæresystemer og eventuelt bærende yttervegger. Ombruk av slike bærekonstruksjoner regnes ikke som omsetning.</p>",
           "options": [
             {
               "id": "onlySale.yes.sale",
@@ -154,7 +154,7 @@
             {
               "id": "onlySale.no.use",
               "type": "Answer",
-              "heading": "Nei, byggevaren skifter ikke eier (gjelder f.eks. for lokalt og internt ombruk)",
+              "heading": "Nei, byggevaren skifter ikke eier (gjelder for eksempel for lokalt og internt ombruk)",
               "value": "no.use"
             },
             {
