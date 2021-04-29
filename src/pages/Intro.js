@@ -26,6 +26,10 @@ function Intro({ close, data: { $computed, ...data } }) {
         </ul>
         <h3>Skillet mellom omsetning og bruk av byggevaren</h3> 
         Det er forskjell på kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. 
+        <ul> 
+          <li>Kravene til omsetning og salg står i byggevareforskriften. De retter seg mot produsenter, importører og distributører av byggevarer. DiBK fører tilsyn med produktene.</li>
+          <li>Kravene til bruk av byggevarer i byggverk er beskrevet i byggteknisk forskrift. De retter seg mot det ansvarlige foretaket i byggesaken. Kommunen fører tilsyn med byggesaken.</li>
+        </ul>
         <p><img src="https://dibk.no/globalassets/5.-nye-sider-om-byggevarer/byggevarer---hovedside/bildeom.jpg"/></p>
         <p>I denne veiviseren er fokuset på kravene til omsetning/salg av brukte byggevarer.</p>
         
