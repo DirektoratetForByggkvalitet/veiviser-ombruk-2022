@@ -38,6 +38,8 @@ function Intro({ close, data: { $computed, ...data } }) {
         <Primitives.Button.MainButton type="button" onClick={() => close()}>
           Start veiviseren
         </Primitives.Button.MainButton>
+        <h3>Gi oss tilbakemelding!</h3>
+        Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.
       </IntroMain>
     </Primitives.Wizard>
   );
