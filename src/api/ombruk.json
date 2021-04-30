@@ -73,6 +73,13 @@
                   ]
                 },
                 {
+                  "id": "ResultOne",
+                  "type": "Result",
+                  "show": { "field": "varigDelAvByggverk", "operator": "eq", "value": false },
+                  "heading": "Produktet er ikke omfattet av kravene i bygningsregelverket",
+                  "lead": "<p>Produkter som ikke er byggevarer eller ikke skal brukes som byggevarer, trenger ikke oppfylle kravene i byggevareforskriften eller byggteknisk forskrift. Produkter som brukes til kunst eller interiør er ikke dekket av kravene i bygningsregelverket.</p>"
+                },
+                {
                   "id": "grunnleggendeEgenskaper",
                   "property": "grunnleggendeEgenskaper",
                   "type": "Radio",

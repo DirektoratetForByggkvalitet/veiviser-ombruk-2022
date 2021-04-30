@@ -24,13 +24,14 @@ function Intro({ close, data: { $computed, ...data } }) {
           <li>om du har produktdokumentasjon, sertifisering eller godkjenning eller annen dokumentasjon fra da byggevaren først ble omsatt (FDV-dokumentasjon kan si noe om opprinnelsen til produktet)</li>
           <li>andre opplysninger om behandlingen av byggevaren fra rivingsprosessen</li>
         </ul>
+        Før byggevarer blir demontert fra et eksisterende byggverk skal det gjennomføres en kartlegging av farlig avfall og bygningsfraksjoner som må fjernes. Byggevarer som er farlig avfall, kan ikke ombrukes, men skal leveres som farlig avfall til godkjent mottak.
         <h3>Skillet mellom omsetning og bruk av byggevaren</h3> 
         Det er forskjell på kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. 
         <ul> 
           <li>Kravene til omsetning og salg står i byggevareforskriften. De retter seg mot produsenter, importører og distributører av byggevarer. DiBK fører tilsyn med produktene.</li>
           <li>Kravene til bruk av byggevarer i byggverk er beskrevet i byggteknisk forskrift. De retter seg mot det ansvarlige foretaket i byggesaken. Kommunen fører tilsyn med byggesaken.</li>
         </ul>
-        <p><img src="https://dibk.no/globalassets/5.-nye-sider-om-byggevarer/byggevarer---hovedside/bildeom.jpg"/></p>
+        <p><img src="https://dibk.no/globalassets/produkter/omsetning_bruk.svg"/></p>
         <p>I denne veiviseren er fokuset på kravene til omsetning/salg av brukte byggevarer.</p>
         
 
