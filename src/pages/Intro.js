@@ -16,7 +16,7 @@ function Intro({ close, data: { $computed, ...data } }) {
         Finn kravene som gjelder for å omsette en gammel byggevare på nytt. Svar på spørsmålene for å finne ut om dokumentasjonen er i orden, eller om det er noe som mangler. 
         </Primitives.Paragraphs.Lead>
         <Primitives.Paragraphs.Lead>
-        <h3>Før du begynner</h3> 
+        <h2>Før du begynner</h2> 
         Før du begynner er det nyttig at du vet: 
         <ul>
           <li>hvor gammel byggevaren er</li>
@@ -25,7 +25,7 @@ function Intro({ close, data: { $computed, ...data } }) {
           <li>andre opplysninger om behandlingen av byggevaren fra rivingsprosessen</li>
         </ul>
         Før byggevarer blir demontert fra et eksisterende byggverk skal det gjennomføres en kartlegging av farlig avfall og bygningsfraksjoner som må fjernes. Byggevarer som er farlig avfall, kan ikke ombrukes, men skal leveres som farlig avfall til godkjent mottak.
-        <h3>Skillet mellom omsetning og bruk av byggevaren</h3> 
+        <h2>Skillet mellom omsetning og bruk av byggevaren</h2> 
         Det er forskjell på kravene til omsetning og salg av byggevarene og kravene til bruk av byggevarer i byggverk. 
         <ul> 
           <li>Kravene til omsetning og salg står i byggevareforskriften. De retter seg mot produsenter, importører og distributører av byggevarer. DiBK fører tilsyn med produktene.</li>
