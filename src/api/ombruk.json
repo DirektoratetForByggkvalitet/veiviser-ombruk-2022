@@ -141,50 +141,49 @@
       ]
     },
     {
-      "id": "Sale",
+      "id": "Recycling",
       "type": "Page",
-      "heading": "Omsetning",
+      "heading": "Resirkulering eller ombruk",
       "children": [
         {
-          "id": "onlySale",
-          "property": "onlySale",
+          "id": "Recycling",
+          "property": "Recycling",
           "type": "Radio",
-          "heading": "Skal du omsette produktet?",
-          "text": "<p>Omsetning innebærer at produkter blir solgt eller gitt bort. Hvis byggevaren ikke skifter eier, er det ikke omsetning. Kravene til omsetning er rettet mot produsenter, importører og distributører av byggevarer. Den som kjøper et produkt for å bruke det i et prosjekt er ikke omfattet av kravene til omsetning.</p> <p> Det regnes ikke som omsetning hvis byggevaren tas ut av et riving- og rehabiliteringsprosjekt og <ul> <li> brukes på nytt i samme prosjekt eller samme eksisterende bygg (lokalt ombruk) eller </li> <li> samme byggherre eller aktør bruker de på nytt i et annet prosjekt (internt ombruk) </li> </ul> </p> <p> Det er gjennomført mange rehabiliteringsprosjekter der man har beholdt grunn og fundamenter, dekker, bæresystemer og eventuelt bærende yttervegger. Ombruk av slike bærekonstruksjoner regnes ikke som omsetning.</p>",
+          "heading": "Skal produktet bearbeides?",
+          "text": "<p> Det er viktig å skille mellom å gjenvinne gamle produkter og å bruke et gammelt produkt på nytt uten at man gjør store endringer med det. <ul> <li> <b>Gjenvinning</b> (resirkulering) er å bruke materiale fra avfall som råstoff til å produsere nye varer. På denne måten lager man nye produkter av brukte byggevarer, enten til det samme produktet eller et nytt produkt. Det vil for eksempel være gjenvinning å kverne opp gipsplater som brukes i nye gipsplater eller kverne opp glass som brukes til å produsere isolasjonsmateriale. </li> <li> <b>Ombruk</b> av byggevarer vil si å bruke gamle materialer på nytt uten å gjøre endringer. Det er ombruk selv om produktet blir vasket, renset eller overflatebehandlet. Det er også ombruk selv om deler av produktet blir kappet vekk eller fjernet, så lenge dette ikke innebærer grunnleggende endringer av produktet. Den nye bruken kan være den samme som ved førstegangsbruk eller at produktet blir brukt til noe annet, for eksempel vinduer som blir brukt som innervegger. Endringen er vesentlig hvis prosessen går lenger enn reparasjon, vasking eller regelmessig vedlikehold. </li> </ul> </p>",
           "options": [
             {
-              "id": "onlySale.yes.sale",
+              "id": "Recycling.yes.traditional",
               "type": "Answer",
-              "heading": "Ja, jeg skal omsette byggevaren",
-              "value": "yes.sale"
+              "heading": "Ja, produktet skal gjenvinnes eller leveres til avfallsmottak for gjenvinning",
+              "value": 3
             },
             {
-              "id": "onlySale.no.use",
+              "id": "Recycling.yes.compile",
               "type": "Answer",
-              "heading": "Nei, byggevaren skifter ikke eier (gjelder for eksempel for lokalt og internt ombruk)",
-              "value": "no.use"
+              "heading": "Ja, produktet består av gamle produkter som settes sammen til en annen produkttype",
+              "value": 2
             },
             {
-              "id": "onlySale.no.buy",
+              "id": "Recycling.yes.change",
               "type": "Answer",
-              "heading": "Nei, jeg skal kun kjøpe en gammel byggevare (gjelder for innkjøper i et byggeprosjekt eller sluttbruker)",
-              "value": "no.buy"
+              "heading": "Ja, produktet skal vesentlig endres",
+              "value": 1
+            },
+            {
+              "id": "Recycling.no",
+              "type": "Answer",
+              "heading": "Nei, produktet skal brukes på nytt uten endringer (ombruk)",
+              "value": 0
             }
           ]
         },
         {
-          "id": "ResultTwo",
+          "id": "ResultFive",
           "type": "Result",
-          "show": { "field": "onlySale", "operator": "eq", "value": "no.use" },
-          "heading": "Byggevaren er ikke omfattet av kravene til omsetning, men husk kravene til bruk",
-          "lead": "<h2>Omsetning</h2> <p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. </p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre egen test av produktets egenskaper før det blir brukt i et byggverk. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul> </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene. </p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p> "
-        },
-        {
-          "id": "ResultThree",
-          "type": "Result",
-          "show": { "field": "onlySale", "operator": "eq", "value": "no.buy" },
-          "heading": "Kravene til omsetning av byggevarer er ikke relevante for deg, men husk kravene til bruk",
-          "lead": "<h2>Omsetning</h2> <p>Kravene om omsetning gjelder ikke for deg som er innkjøper eller sluttbruker av byggevaren. Du må derfor ikke oppfylle kravene i byggevareforskriften.</p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller blant annet krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre en egen test av produktets egenskaper før det blir brukt i et byggverk. Det er derfor viktig å be om dokumentasjonen fra den du kjøper produktet av. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul>  </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene.</p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
+          "show": { "field": "Recycling", "operator": "gte", "value": 1 },
+          "heading": "Du må skaffe ny dokumentasjon på produktet",
+          "lead": "<p> Kravene til dokumentasjon av byggevarer står i <a href='https://dibk.no/regelverk/dok/' target='_blank'>byggevareforskriften</a>. Det er krav om ytelseserklæring og CE-merking for byggevarer som er harmoniserte og krav om produktdokumentasjon for varer som ikke er harmoniserte. Les mer om kravene på <a href='https://dibk.no/byggevarer/' target='_blank'>våre nettsider</a>. </p> <p> Resirkulerte byggevarer brukes til å produsere nye byggevarer. I slike tilfeller stiller byggevareforskriften kun krav til det endelige sluttproduktet.For byggevarer som vesentlig endres stiller byggevareforskriften også krav til det endelige sluttproduktet.</p> <p>Det er ofte nødvendig med en normal kvalitetssikring av materialgjenvunnet råstoff eller produkt inn i produksjonen av de nye produktene. </p> <p> Ved direkte gjenvinning brukes materialet som råstoff for tilsvarende produkter. Ved indirekte gjenvinning brukes materialet enten som råstoff eller settes sammen til andre typer produkter, for eksempel knust betong.  Det finnes flere ulike standarder for hvordan slike produkter skal bearbeides. </p> <p> For å øke muligheten for å gjenvinne materialer av de ulike avfallsfraksjonene i stadig større grad, er det viktig at demontering og rivning skjer på en slik måte at separering og sortering av materialer blir mindre ressurskrevende. Derfor er det viktig å prosjektere og planlegge for materialgjenvinning ved demontering/rivning. </p> <h3>Avfall og miljøsanering</h3> <p> God sortering av avfall bidrar til økt ombruk og materialgjenvinning. Les mer om <a href='https://dibk.no/avfall' target='_blank'>avfall- og miljøsanering</a> </p><h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
         }
       ]
     },
@@ -232,43 +231,50 @@
       ]
     },
     {
-      "id": "Recycling",
+      "id": "Sale",
       "type": "Page",
-      "heading": "Resirkulering eller ombruk",
+      "heading": "Omsetning",
       "children": [
         {
-          "id": "Recycling",
-          "property": "Recycling",
+          "id": "onlySale",
+          "property": "onlySale",
           "type": "Radio",
-          "heading": "Skal produktet bearbeides?",
-          "text": "<p> Det er viktig å skille mellom å gjenvinne gamle produkter og å bruke et gammelt produkt på nytt uten at man gjør store endringer med det. <ul> <li> <b>Gjenvinning</b> (resirkulering) er å bruke materiale fra avfall som råstoff til å produsere nye varer. På denne måten lager man nye produkter av brukte byggevarer, enten til det samme produktet eller et nytt produkt. Det vil for eksempel være gjenvinning å kverne opp gipsplater som brukes i nye gipsplater eller kverne opp glass som brukes til å produsere isolasjonsmateriale. </li> <li> <b>Ombruk</b> av byggevarer vil si å bruke gamle materialer på nytt uten å gjøre endringer. Det er ombruk selv om produktet blir vasket, renset eller overflatebehandlet. Det er også ombruk selv om deler av produktet blir kappet vekk eller fjernet, så lenge dette ikke innebærer grunnleggende endringer av produktet. Den nye bruken kan være den samme som ved førstegangsbruk eller at produktet blir brukt til noe annet, for eksempel vinduer som blir brukt som innervegger. </li> </ul> </p>",
+          "heading": "Skal du omsette produktet?",
+          "text": "<p>Omsetning innebærer at produkter blir solgt eller gitt bort. Hvis byggevaren ikke skifter eier, er det ikke omsetning. Kravene til omsetning er rettet mot produsenter, importører og distributører av byggevarer. Den som kjøper et produkt for å bruke det i et prosjekt er ikke omfattet av kravene til omsetning.</p> <p> Det regnes ikke som omsetning hvis byggevaren tas ut av et riving- og rehabiliteringsprosjekt og <ul> <li> brukes på nytt i samme prosjekt eller samme eksisterende bygg (lokalt ombruk) eller </li> <li> samme byggherre eller aktør bruker de på nytt i et annet prosjekt (internt ombruk) </li> </ul> </p> <p> Det er gjennomført mange rehabiliteringsprosjekter der man har beholdt grunn og fundamenter, dekker, bæresystemer og eventuelt bærende yttervegger. Ombruk av slike bærekonstruksjoner regnes ikke som omsetning.</p>",
           "options": [
             {
-              "id": "Recycling.yes.traditional",
+              "id": "onlySale.yes.sale",
               "type": "Answer",
-              "heading": "Ja, produktet skal gjenvinnes eller leveres til avfallsmottak for gjenvinning",
-              "value": 2
+              "heading": "Ja, jeg skal omsette byggevaren",
+              "value": "yes.sale"
             },
             {
-              "id": "Recycling.yes.compile",
+              "id": "onlySale.no.use",
               "type": "Answer",
-              "heading": "Ja, produktet består av gamle produkter som settes sammen til en annen produkttype",
-              "value": 1
+              "heading": "Nei, byggevaren skifter ikke eier (gjelder for eksempel for lokalt og internt ombruk)",
+              "value": "no.use"
             },
             {
-              "id": "Recycling.no",
+              "id": "onlySale.no.buy",
               "type": "Answer",
-              "heading": "Nei, produktet skal brukes på nytt uten endringer (ombruk)",
-              "value": 0
+              "heading": "Nei, jeg skal kun kjøpe en gammel byggevare (gjelder for innkjøper i et byggeprosjekt eller sluttbruker)",
+              "value": "no.buy"
             }
           ]
         },
         {
-          "id": "ResultFive",
+          "id": "ResultTwo",
           "type": "Result",
-          "show": { "field": "Recycling", "operator": "gte", "value": 1 },
-          "heading": "Du må skaffe ny dokumentasjon på produktet",
-          "lead": "<p> Kravene til dokumentasjon av byggevarer står i <a href='https://dibk.no/regelverk/dok/' target='_blank'>byggevareforskriften</a>.</p> <p> Resirkulerte byggevarer brukes til å produsere nye byggevarer. I slike tilfeller stiller byggevareforskriften kun krav til det endelige sluttproduktet.</p> <p>Det er ofte nødvendig med en normal kvalitetssikring av materialgjenvunnet råstoff eller produkt inn i produksjonen av de nye produktene. </p> <p> Ved direkte gjenvinning brukes materialet som råstoff for tilsvarende produkter. Ved indirekte gjenvinning brukes materialet enten som råstoff eller settes sammen til andre typer produkter, for eksempel knust betong.  Det finnes flere ulike standarder for hvordan slike produkter skal bearbeides. </p> <p> For å øke muligheten for å gjenvinne materialer av de ulike avfallsfraksjonene i stadig større grad, er det viktig at demontering og rivning skjer på en slik måte at separering og sortering av materialer blir mindre ressurskrevende. Derfor er det viktig å prosjektere og planlegge for materialgjenvinning ved demontering/rivning. </p> <h3>Avfall og miljøsanering</h3> <p> God sortering av avfall bidrar til økt ombruk og materialgjenvinning. Les mer om <a href='https://dibk.no/avfall' target='_blank'>avfall- og miljøsanering</a> </p><h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
+          "show": { "field": "onlySale", "operator": "eq", "value": "no.use" },
+          "heading": "Byggevaren er ikke omfattet av kravene til omsetning, men husk kravene til bruk",
+          "lead": "<h2>Omsetning</h2> <p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. </p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre egen test av produktets egenskaper før det blir brukt i et byggverk. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul> </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene. </p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p> "
+        },
+        {
+          "id": "ResultThree",
+          "type": "Result",
+          "show": { "field": "onlySale", "operator": "eq", "value": "no.buy" },
+          "heading": "Kravene til omsetning av byggevarer er ikke relevante for deg, men husk kravene til bruk",
+          "lead": "<h2>Omsetning</h2> <p>Kravene om omsetning gjelder ikke for deg som er innkjøper eller sluttbruker av byggevaren. Du må derfor ikke oppfylle kravene i byggevareforskriften.</p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller blant annet krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre en egen test av produktets egenskaper før det blir brukt i et byggverk. Det er derfor viktig å be om dokumentasjonen fra den du kjøper produktet av. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul>  </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene.</p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
         }
       ]
     },
