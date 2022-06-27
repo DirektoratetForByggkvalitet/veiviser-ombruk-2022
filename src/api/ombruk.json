@@ -188,49 +188,6 @@
       ]
     },
     {
-      "id": "import",
-      "type": "Page",
-      "heading": "Import av byggevarer",
-      "children": [
-        {
-          "id": "importProduct",
-          "property": "importProduct",
-          "type": "Radio",
-          "heading": "Skal byggevaren importeres til Norge?",
-          "text": "<p> I de aller fleste tilfellene vil gamle byggevarer tas ut av et byggverk i Norge. Det kan likevel være noen tilfeller der varen blir importert fra et annet land. Da må den som importerer varen passe på at de har forstått hvilke krav det er til dokumentasjon.</p> <p> Hvis du importerer varen fra et annet EU/EØS-land, vil kravene stort sett være de samme som for produkter som produseres i Norge. Hvis en byggevare lovlig kan omsettes i annet EØS-land, kan produktet bli omsatt i Norge uten ny prøving eller kontroll.</p>",
-          "summary": "Hva er et EU/EØS-land?",
-          "details": "<p>Belgia, Bulgaria, Danmark, Estland, Finland, Frankrike, Hellas, Irland, Island, Italia, Kroatia (fra 2014), Kypros, Latvia, Liechtenstein, Litauen, Luxembourg, Malta, Nederland, Norge, Polen, Portugal, Romania, Slovakia, Slovenia, Spania, Storbritannia og Nord-Irland (omfattet av EØS-avtalen frem til 31.12.2020), Sveits (Sveits er ikke EØS-land, men omfattes av reglene for omsetning av byggevarer), Sverige, Tsjekkia, Tyskland, Ungarn, Østerrike </p>",
-          "options": [
-            {
-              "id": "importProduct.no",
-              "type": "Answer",
-              "heading": "Nei, produktet er i Norge (gjelder for alle produkter som er tatt ut av et norsk byggverk)",
-              "value": "no"
-            },
-            {
-              "id": "importProduct.yesEU",
-              "type": "Answer",
-              "heading": "Ja, det skal importeres fra et land i EU/EØS",
-              "value": "yesEU"
-            },
-            {
-              "id": "importProduct.yesOther",
-              "type": "Answer",
-              "heading": "Ja, det skal importeres fra et land utenfor EU/EØS",
-              "value": "yesOther"
-            }
-          ]
-        },
-        {
-          "id": "ResultFour",
-          "type": "Result",
-          "show": { "field": "importProduct", "operator": "eq", "value": "yesOther" },
-          "heading": "Du regnes som importør av byggevaren etter byggevareforskriften (DOK)",
-          "lead": "<p> Hvis du importerer en ombrukt byggevare fra et land utenfor EU/EØS, stilles det krav om å skaffe eller utarbeide produktdokumentasjon etter byggevareforskriften. Her kan du lese mer om <a href='https://dibk.no/regelverk/dok/veiledning-til/17.-forpliktelser-til/' target='_blank'>forpliktelsene til en importør.</a></p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
-        }
-      ]
-    },
-    {
       "id": "Sale",
       "type": "Page",
       "heading": "Omsetning",
@@ -275,6 +232,48 @@
           "show": { "field": "onlySale", "operator": "eq", "value": "no.buy" },
           "heading": "Kravene til omsetning av byggevarer er ikke relevante for deg, men husk kravene til bruk",
           "lead": "<h2>Omsetning</h2> <p>Kravene om omsetning gjelder ikke for deg som er innkjøper eller sluttbruker av byggevaren. Du må derfor ikke oppfylle kravene i byggevareforskriften.</p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller blant annet krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre en egen test av produktets egenskaper før det blir brukt i et byggverk. Det er derfor viktig å be om dokumentasjonen fra den du kjøper produktet av. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul>  </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene.</p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
+        }
+      ]
+    },
+    {
+      "id": "CE",
+      "type": "Page",
+      "heading": "Frivillig CE-merking",
+      "children": [
+        {
+          "id": "CE",
+          "property": "CE",
+          "type": "Radio",
+          "heading": "Ønsker du å frivillig CE-merke produktet?",
+          "text": "<p> CE-merking av ombrukte byggevarer er mulig hvis det finnes en harmonisert produktstandard eller en europeisk teknisk bedømmelse (EAD) for produktet. Du kan lese mer om kravene på <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/krav-til-dokumentasjon/obligatorisk-og-frivillig-ce-merking-og-ytelseserklaring/' target='_blank'>våre nettsider.</a> </p> <p>Det finnes foreløpig ingen harmoniserte standarder for ombrukte byggevarer, men det er en mulighet å få utviklet en frivillig EAD for slike produkter. Det finnes f.eks. en slik EAD for <a href='https://www.eota.eu/eads' target='_blank'>«Re-cycled clay masonry units».</a></p>",
+          "options": [
+            {
+              "id": "CE.yes",
+              "type": "Answer",
+              "heading": "Ja, jeg ønsker å CE-merke produktet mitt gjennom å skaffe meg en EAD/ETA",
+              "value": 1
+            },
+            {
+              "id": "CE.no.",
+              "type": "Answer",
+              "heading": "Nei, jeg ønsker ikke å CE-merke produktet mitt",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "id": "ResultFive",
+          "type": "Result",
+          "show": { "field": "CE", "operator": "gte", "value": 1 },
+          "heading": "Du må skaffe ny dokumentasjon på produktet",
+          "lead": "<p> Kravene til dokumentasjon av byggevarer står i <a href='https://dibk.no/regelverk/dok/' target='_blank'>byggevareforskriften</a>. Det er krav om ytelseserklæring og CE-merking for byggevarer som er harmoniserte og krav om produktdokumentasjon for varer som ikke er harmoniserte. Les mer om kravene på <a href='https://dibk.no/byggevarer/' target='_blank'>våre nettsider</a>. </p> <p> Resirkulerte byggevarer brukes til å produsere nye byggevarer. I slike tilfeller stiller byggevareforskriften kun krav til det endelige sluttproduktet.For byggevarer som vesentlig endres stiller byggevareforskriften også krav til det endelige sluttproduktet.</p> <p>Det er ofte nødvendig med en normal kvalitetssikring av materialgjenvunnet råstoff eller produkt inn i produksjonen av de nye produktene. </p> <p> Ved direkte gjenvinning brukes materialet som råstoff for tilsvarende produkter. Ved indirekte gjenvinning brukes materialet enten som råstoff eller settes sammen til andre typer produkter, for eksempel knust betong.  Det finnes flere ulike standarder for hvordan slike produkter skal bearbeides. </p> <p> For å øke muligheten for å gjenvinne materialer av de ulike avfallsfraksjonene i stadig større grad, er det viktig at demontering og rivning skjer på en slik måte at separering og sortering av materialer blir mindre ressurskrevende. Derfor er det viktig å prosjektere og planlegge for materialgjenvinning ved demontering/rivning. </p> <h3>Avfall og miljøsanering</h3> <p> God sortering av avfall bidrar til økt ombruk og materialgjenvinning. Les mer om <a href='https://dibk.no/avfall' target='_blank'>avfall- og miljøsanering</a> </p><h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
+        },
+        {
+          "id": "ResultFive",
+          "type": "Result",
+          "show": { "field": "CE", "operator": "gte", "value": 0 },
+          "heading": "Du må skaffe ny dokumentasjon på produktet",
+          "lead": "<p> Kravene til dokumentasjon av byggevarer står i <a href='https://dibk.no/regelverk/dok/' target='_blank'>byggevareforskriften</a>. Det er krav om ytelseserklæring og CE-merking for byggevarer som er harmoniserte og krav om produktdokumentasjon for varer som ikke er harmoniserte. Les mer om kravene på <a href='https://dibk.no/byggevarer/' target='_blank'>våre nettsider</a>. </p> <p> Resirkulerte byggevarer brukes til å produsere nye byggevarer. I slike tilfeller stiller byggevareforskriften kun krav til det endelige sluttproduktet.For byggevarer som vesentlig endres stiller byggevareforskriften også krav til det endelige sluttproduktet.</p> <p>Det er ofte nødvendig med en normal kvalitetssikring av materialgjenvunnet råstoff eller produkt inn i produksjonen av de nye produktene. </p> <p> Ved direkte gjenvinning brukes materialet som råstoff for tilsvarende produkter. Ved indirekte gjenvinning brukes materialet enten som råstoff eller settes sammen til andre typer produkter, for eksempel knust betong.  Det finnes flere ulike standarder for hvordan slike produkter skal bearbeides. </p> <p> For å øke muligheten for å gjenvinne materialer av de ulike avfallsfraksjonene i stadig større grad, er det viktig at demontering og rivning skjer på en slik måte at separering og sortering av materialer blir mindre ressurskrevende. Derfor er det viktig å prosjektere og planlegge for materialgjenvinning ved demontering/rivning. </p> <h3>Avfall og miljøsanering</h3> <p> God sortering av avfall bidrar til økt ombruk og materialgjenvinning. Les mer om <a href='https://dibk.no/avfall' target='_blank'>avfall- og miljøsanering</a> </p><h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p>"
         }
       ]
     },
