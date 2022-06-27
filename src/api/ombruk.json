@@ -181,7 +181,7 @@
           ]
         },
         {
-          "id": "ResultFive",
+          "id": "ResultTwo",
           "type": "Result",
           "show": { "field": "Recycling", "operator": "gte", "value": 1 },
           "heading": "Du må skaffe ny dokumentasjon på produktet",
@@ -222,14 +222,14 @@
           ]
         },
         {
-          "id": "ResultTwo",
+          "id": "ResultThree",
           "type": "Result",
           "show": { "field": "onlySale", "operator": "eq", "value": "no.use" },
           "heading": "Byggevaren er ikke omfattet av kravene til omsetning, men husk kravene til bruk",
           "lead": "<h2>Omsetning</h2> <p>Byggevarer som ikke omsettes må heller ikke oppfylle kravene i byggevareforskriften. </p> <h2>Bruk av byggevaren </h2> <p> Hvis byggevaren skal brukes i et tiltak, må du huske å sjekke om egenskapene til byggevaren er tilstrekkelige for at bygningen oppfyller de tekniske kravene i <a href='https://dibk.no/byggereglene/byggteknisk-forskrift-tek17/' target='_blank'>byggteknisk forskrift</a>.</p> <h3> Krav til byggverket</h3> <p>Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å velge produkter slik at byggverket som helhet tilfredsstiller kravene i byggteknisk forskrift. Forskriften stiller krav til bygningens innretning, konstruksjon, brannsikkerhet, inneklima, energiforbruk og tekniske installasjoner.</p> <h3>Krav til dokumentasjon av byggevaren</h3> <p> Tiltakshaver og de ansvarlige foretakene i byggesaken har ansvar for å sikre at byggevaren har forsvarlige egenskaper som bidrar til at byggverket oppfyller kravene i byggteknisk forskrift. Egenskapene må kunne dokumenteres. Se <a href='https://dibk.no/regelverk/byggteknisk-forskrift-tek17/3/3-1/' target='_blank'>byggteknisk forskrift § 3-1</a>.</p> <p> Hvis en byggevare har produktdokumentasjon som er i tråd med byggevareforskriften, trenger ikke tiltakshaver eller ansvarlig foretak gjøre egen test av produktets egenskaper før det blir brukt i et byggverk. Hvis produktdokumentasjonen mangler eller er uriktig, er det nødvendig å kunne verifisere at byggevaren har de egenskaper som er nødvendig for at det ferdige byggverket tilfredsstiller kravene i byggteknisk forskrift. Verifikasjonen kan skje gjennom testing eller annen form for kontroll for å definere ytelsesnivået.</p> <p> Det er til nå utarbeidet få testmetoder for å vurdere og kontrollere produkter som brukes på nytt. Her er en liste over noen slike metoder som er laget: <ul> <li> <b>Teglstein:</b> <a href='https://www.eota.eu/en-GB/content/eads/56/' target='_blank'>EAD 170005-00-0305</a> </li> <li> <b>Stål:</b> <a href='https://www.stalforbund.no/nyheter/ombruksrapporten-kan-lastes-ned-her/' target='_blank'>veileder laget av Stålforbundet</a>.</li> </ul> </p> <h3>Hvilke egenskaper skal dokumenteres i byggesaken?</h3> <p>Hvis det ombrukte produktet blir brukt til et konkret prosjekt, trenger du bare dokumentere de egenskapene som er relevante for det konkrete prosjektet. Hvilke egenskaper som skal dokumenteres vil variere fra produkttype til produkttype og vil i stor grad avhenge av hva produktet skal brukes til i prosjektet.</p><p> For å finne ut hvilke egenskaper som kan være relevante å dokumentere for ditt produkt, kan du blant annet se på hvilke egenskaper som vanligvis blir dokumentert for tilsvarende, nye produkter. Du kan for eksempel se på en ytelseserklæring for et nytt produkt, eller gå gjennom den harmoniserte standarden for produktet. Direktoratets <a href='https://dibk.no/byggevarer/finn-byggevare-og-dokumentasjonskrav/' target='_blank'> veileder for salg av nye byggevarer </a> (totalt 20 byggevaretyper) gir informasjon om hvilke egenskaper som ofte er viktige for disse byggevaretypene. </p> <h3>Gi oss tilbakemelding! </h3> <p> Har du tilbakemeldinger eller forslag til forbedringer, eller har du funnet feil eller mangler? Send oss en henvendelse på <a href='Mailto:post@dibk.no' target='_blank'>post@dibk.no</a>.</p> "
         },
         {
-          "id": "ResultThree",
+          "id": "ResultFour",
           "type": "Result",
           "show": { "field": "onlySale", "operator": "eq", "value": "no.buy" },
           "heading": "Kravene til omsetning av byggevarer er ikke relevante for deg, men husk kravene til bruk",
