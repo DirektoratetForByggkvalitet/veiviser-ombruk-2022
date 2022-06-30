@@ -11,7 +11,7 @@ function Intro({ close, data: { $computed, ...data } }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
-        <Primitives.Heading.H1>Skal du selge gamle byggevarer på nytt?</Primitives.Heading.H1>
+        <Primitives.Heading.H1>Skal du selge gamle byggevarer?</Primitives.Heading.H1>
         <Primitives.Paragraphs.Lead>
         Finn kravene som gjelder for å omsette en gammel byggevare på nytt. Svar på spørsmålene for å finne ut om dokumentasjonen er i orden, eller om det er noe som mangler. 
         </Primitives.Paragraphs.Lead>
